@@ -38,7 +38,7 @@
                 <article>
                     <div class="mini-car-title">
                         {# Le lien sera activé avec la page de détail. #}
-                        <a href="#">
+                        <a href="{{ path('app_voiture_show', {id: voiture.id}) }}">
                             <h3>{{ voiture.name }}</h3>
                             <p>ou similaire | Saint-Étienne</p>
                         </a>
