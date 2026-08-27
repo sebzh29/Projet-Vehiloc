@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter une voiture - Véhicloc{% endblock %}
+
+{% block body %}
+    <section id="add">
+        <a href="{{ path('app_accueil') }}">← Retour</a>
+
+        <h1>Ajouter une voiture</h1>
+
+        {{ form_start(form) }}
+
+            {{ form_row(form.name, {
+                row_attr: {
+                    class: 'input'
+                }
+            }) }}
+
+            {{ form_row(form.description, {
+                row_attr: {
+                    class: 'input'
+                }
+            }) }}
+
+            <div class="flex-input">
+                {{ form_row(form.monthlyPrice, {
+                    row_attr: {
+                        class: 'input'
+                    }
+                }) }}
+
+                {{ form_row(form.dailyPrice, {
+                    row_attr: {
+                        class: 'input'
+                    }
+                }) }}
+            </div>
+
+            <div class="flex-input">
+                {{ form_row(form.places, {
+                    row_attr: {
+                        class: 'input'
+                    }
+                }) }}
+
+                {{ form_row(form.motor, {
+                    row_attr: {
+                        class: 'input'
+                    }
+                }) }}
+            </div>
+
+            <button type="submit" class="btn-add">
+                Ajouter
+            </button>
+
+        {{ form_end(form) }}
+    </section>
+{% endblock %}

@@ -34,9 +34,12 @@
             </a>
 
             {# La route d’ajout sera créée à l’étape 6. #}
-            <a href="#" class="btn-nav">
-                Ajouter une voiture
-            </a>
+            <a
+    href="{{ path('app_voiture_add') }}"
+    class="btn-nav"
+>
+    Ajouter une voiture
+</a>
         </nav>
 
         {% block header_content %}{% endblock %}
