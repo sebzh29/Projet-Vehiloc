@@ -45,7 +45,7 @@
 
                         <div>
                             {# La suppression sera activée à l’étape 5. #}
-                            <a href="#">
+                            <a href="{{ path('app_voiture_delete', {id: voiture.id}) }}">
                                 <img
                                     src="{{ asset('assets/icons/trash.png') }}"
                                     alt="Supprimer"
